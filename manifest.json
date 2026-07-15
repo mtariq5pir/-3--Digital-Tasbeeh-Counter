@@ -1,0 +1,24 @@
+{
+  "short_name": "Tasbeeh",
+  "name": "Ultimate Digital Tasbeeh Counter",
+  "description": "An interactive, multilingual, and premium Digital Tasbeeh Counter featuring authentic Supplications (Azkar).",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#0f172a",
+  "theme_color": "#10b981",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "auto",
+  "lang": "ur"
+}

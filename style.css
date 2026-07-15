@@ -1,0 +1,351 @@
+/* International Standard Stylesheet - Multi Themes */
+:root {
+    --primary-color: #10b981; 
+    --primary-glow: rgba(16, 185, 129, 0.4);
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --bg-card: rgba(30, 41, 59, 0.7);
+    --bg-circle-track: rgba(255, 255, 255, 0.05);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-light {
+    --primary-color: #059669;
+    --primary-glow: rgba(5, 150, 105, 0.2);
+    --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    --bg-card: rgba(255, 255, 255, 0.9);
+    --bg-circle-track: rgba(0, 0, 0, 0.05);
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.theme-amoled {
+    --primary-color: #ffffff;
+    --primary-glow: rgba(255, 255, 255, 0.2);
+    --bg-gradient: linear-gradient(135deg, #000000 0%, #000000 100%);
+    --bg-card: #121212;
+    --bg-circle-track: rgba(255, 255, 255, 0.1);
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --border-color: #222222;
+}
+
+.theme-islamic {
+    --primary-color: #d4af37; /* Deep Gold */
+    --primary-glow: rgba(212, 175, 55, 0.3);
+    --bg-gradient: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+    --bg-card: rgba(6, 78, 59, 0.8);
+    --bg-circle-track: rgba(255, 255, 255, 0.08);
+    --text-primary: #f0fdf4;
+    --text-secondary: #a7f3d0;
+    --border-color: rgba(255, 255, 255, 0.15);
+}
+
+.theme-blue {
+    --primary-color: #3b82f6;
+    --primary-glow: rgba(59, 130, 246, 0.4);
+    --bg-gradient: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    --bg-card: rgba(30, 41, 59, 0.8);
+    --bg-circle-track: rgba(255, 255, 255, 0.05);
+    --text-primary: #f0fdf4;
+    --text-secondary: #93c5fd;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Amiri', 'Noto Nastaliq Urdu', sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.app-container {
+    background: var(--bg-card);
+    width: 100%;
+    max-width: 480px;
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header class {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    background: var(--bg-card);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+/* Search Bar */
+.search-bar-container {
+    position: relative;
+    width: 100%;
+}
+.search-bar-container input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-circle-track);
+    color: var(--text-primary);
+}
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+/* Category Tabs */
+.category-tabs {
+    display: flex;
+    gap: 6px;
+    background: var(--bg-circle-track);
+    padding: 4px;
+    border-radius: 12px;
+}
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    padding: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.tab-btn.active {
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 12px var(--primary-glow);
+}
+
+/* Zikr Card */
+.zikr-card {
+    text-align: center;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: var(--bg-circle-track);
+    border-radius: 18px;
+    border: 1px solid var(--border-color);
+}
+.zikr-arabic {
+    font-family: 'Amiri', serif;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--primary-color);
+}
+.zikr-translation {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+.hadith-reference {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.7;
+}
+
+/* Achievement Badge */
+.achievement-badge {
+    background: rgba(212, 175, 55, 0.15);
+    color: #d4af37;
+    text-align: center;
+    padding: 6px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Main Tap Area and Counter */
+.counter-box {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin: 10px auto;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 50%;
+}
+.counter-box:active {
+    transform: scale(0.97);
+}
+.progress-ring {
+    transform: rotate(-90deg);
+}
+.progress-ring__circle {
+    transition: stroke-dashoffset 0.15s ease-in-out;
+}
+.counter-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.count-number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+.target-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: block;
+}
+.tap-hint {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* Targets & Fast Goals */
+.target-management {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.target-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.target-settings input {
+    width: 80px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+}
+.quick-goals {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.goal-chip {
+    background: var(--bg-circle-track);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+.goal-chip:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+/* Dashboard Statistics */
+.stats-dashboard {
+    background: var(--bg-circle-track);
+    padding: 12px;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+}
+.stats-dashboard h3 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+.stats-grid {
+    display: flex;
+    gap: 10px;
+}
+.stat-card {
+    flex: 1;
+    background: rgba(0,0,0,0.1);
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+.stat-num {
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: block;
+    color: var(--primary-color);
+}
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+/* History Log */
+.history-section {
+    max-height: 120px;
+    overflow-y: auto;
+}
+.history-section h4 {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+.history-list {
+    list-style: none;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+/* Footer layout */
+.app-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-btn {
+    background: var(--bg-circle-track);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+}
+.footer-btn.danger { color: #ef4444; }
+.footer-btn.secondary { color: #e2e8f0; }
+.nav-arrows { display: flex; gap: 6px; }

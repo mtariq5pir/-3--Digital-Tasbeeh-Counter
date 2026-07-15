@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" class="theme-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Islamic Tasbeeh Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header / Controls -->
+        <header class="app-header">
+            <div class="theme-selector">
+                <select id="theme-select" title="سیلیکٹ تھیم">
+                    <option value="theme-dark">🌙 ڈارک موڈ</option>
+                    <option value="theme-light">☀️ لائٹ موڈ</option>
+                    <option value="theme-amoled">⚫ ایمولیڈ</option>
+                    <option value="theme-islamic">🕌 اسلامک گرین</option>
+                    <option value="theme-blue">🔹 رائل بلیو</option>
+                </select>
+            </div>
+            
+            <div class="lang-selector">
+                <select id="language-select">
+                    <option value="ur" selected>اردو</option>
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="id">Bahasa</option>
+                </select>
+            </div>
+
+            <div class="audio-settings">
+                <select id="sound-pack" title="آڈیو پیکس">
+                    <option value="classic">🎵 کلک ساؤنڈ</option>
+                    <option value="digital">📟 ڈیجیٹل</option>
+                    <option value="silent">🔇 خاموش</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Search & Categories -->
+            <div class="search-bar-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="search-input" placeholder="ذکر تلاش کریں...">
+            </div>
+
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="general" id="tab-general">عام تسبیح</button>
+                <button class="tab-btn" data-category="morning_evening" id="tab-me">صبح و شام</button>
+                <button class="tab-btn" data-category="after_prayer" id="tab-ap">بعدِ نماز</button>
+            </div>
+
+            <!-- Zikr Display Card -->
+            <div class="zikr-card">
+                <p class="zikr-arabic" id="zikr-arabic">سُبْحَانَ اللَّهِ وَبِحَمْدِهِ</p>
+                <p class="zikr-translation" id="zikr-translation">اللہ پاک ہے اور اپنی تعریف کے ساتھ (پاک ہے)۔</p>
+                <div class="hadith-reference" id="hadith-ref">صحیح البخاری: 6405</div>
+            </div>
+
+            <!-- Advanced Achievements Bar -->
+            <div class="achievement-badge" id="achievement-badge">
+                <i class="fas fa-medal"></i> <span id="badge-text">لیول: نوآموز (Beginner)</span>
+            </div>
+
+
+        <!-- Footer / Controls -->
+        <footer class="app-footer">
+            <button id="undo-btn" class="footer-btn secondary" title="Undo Last Count">
+                <i class="fas fa-undo"></i> <span id="undo-text">انڈو</span>
+            </button>
+            <button id="reset-btn" class="footer-btn danger">
+                <i class="fas fa-redo"></i> <span id="reset-text">ری سیٹ</span>
+            </button>
+            <div class="nav-arrows">
+                <button id="prev-zikr" class="footer-btn" title="Previous">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <button id="next-zikr" class="footer-btn" title="Next">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+        </footer>
+
+
+
+            <!-- Counter Visualizer (Circular Progress & Large Tap Area) -->
+            <div class="counter-box" id="tap-area">
+                <svg class="progress-ring" width="240" height="240">
+                    <circle class="progress-ring__background" stroke="var(--bg-circle-track)" stroke-width="14" fill="transparent" r="105" cx="120" cy="120"/>
+                    <circle class="progress-ring__circle" stroke="var(--primary-color)" stroke-width="14" fill="transparent" r="105" cx="120" cy="120" stroke-dasharray="659.7" stroke-dashoffset="659.7"/>
+                </svg>
+                <div class="counter-display">
+                    <span id="current-count" class="count-number">0</span>
+                    <span class="target-label" id="target-display">ہدف: 33</span>
+                </div>
+                <div class="tap-hint">ٹیپ کریں (ڈبل ٹیپ سے انڈو کریں)</div>
+            </div>
+
+
+            
+            <!-- Target Settings & Fast Goals -->
+            <div class="target-management">
+                <div class="target-settings">
+                    <label for="target-input" id="target-label-text">ہدف سیٹ کریں:</label>
+                    <input type="number" id="target-input" value="33" min="1">
+                </div>
+                <div class="quick-goals">
+                    <button class="goal-chip" data-goal="33">33</button>
+                    <button class="goal-chip" data-goal="99">99</button>
+                    <button class="goal-chip" data-goal="100">100</button>
+                    <button class="goal-chip" data-goal="1000">1000</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- History Log Section -->
+        <section class="history-section">
+            <h4 id="history-title"><i class="fas fa-history"></i> حالیہ ریکارڈز (History)</h4>
+            <ul class="history-list" id="history-log">
+                <!-- Dynamic Items will be added here -->
+            </ul>
+        </section>
+
+        
+        <!-- Stats Panel Dashboard (اب یہ خانہ یہاں نیچے آ گیا ہے) -->
+        <section class="stats-dashboard">
+            <h3 id="stats-title"><i class="fas fa-chart-line"></i> روزانہ کی کارکردگی</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-num" id="stat-today">0</span>
+                    <span class="stat-label">آج کا ذکر</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num" id="stat-lifetime">0</span>
+                    <span class="stat-label">کل تسبیحات</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
