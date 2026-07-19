@@ -1,0 +1,10 @@
+name: digital_tasbeeh_counter
+description: A Flutter application
+version: 1.0.0+1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0 # تاریخ اور زبان کی کیلکولیشن کے لیے

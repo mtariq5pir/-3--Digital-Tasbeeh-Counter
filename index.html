@@ -17,11 +17,11 @@
         <header class="app-header">
             <div class="theme-selector">
                 <select id="theme-select" title="سیلیکٹ تھیم">
-                    <option value="theme-dark">🌙 ڈارک موڈ</option>
-                    <option value="theme-light">☀️ لائٹ موڈ</option>
-                    <option value="theme-amoled">⚫ ایمولیڈ</option>
-                    <option value="theme-islamic">🕌 اسلامک گرین</option>
-                    <option value="theme-blue">🔹 رائل بلیو</option>
+                    <option value="theme-dark" class="lang-txt" data-key="themeDark">🌙 ڈارک موڈ</option>
+                    <option value="theme-light" class="lang-txt" data-key="themeLight">☀️ لائٹ موڈ</option>
+                    <option value="theme-amoled" class="lang-txt" data-key="themeAmoled">⚫ ایمولیڈ</option>
+                    <option value="theme-islamic" class="lang-txt" data-key="themeIslamic">🕌 اسلامک گرین</option>
+                    <option value="theme-blue" class="lang-txt" data-key="themeBlue">🔹 رائل بلیو</option>
                 </select>
             </div>
             
@@ -37,9 +37,9 @@
 
             <div class="audio-settings">
                 <select id="sound-pack" title="آڈیو پیکس">
-                    <option value="classic">🎵 کلک ساؤنڈ</option>
-                    <option value="digital">📟 ڈیجیٹل</option>
-                    <option value="silent">🔇 خاموش</option>
+                    <option value="classic" class="lang-txt" data-key="soundClassic">🎵 کلک ساؤنڈ</option>
+                    <option value="digital" class="lang-txt" data-key="soundDigital">📟 ڈیجیٹل</option>
+                    <option value="silent" class="lang-txt" data-key="soundSilent">🔇 خاموش</option>
                 </select>
             </div>
         </header>
@@ -53,9 +53,10 @@
             </div>
 
             <div class="category-tabs">
-                <button class="tab-btn active" data-category="general" id="tab-general">عام تسبیح</button>
-                <button class="tab-btn" data-category="morning_evening" id="tab-me">صبح و شام</button>
-                <button class="tab-btn" data-category="after_prayer" id="tab-ap">بعدِ نماز</button>
+                <button class="tab-btn active lang-txt" data-category="general" data-key="tabGeneral" id="tab-general">عام تسبیح</button>
+                <button class="tab-btn lang-txt" data-category="morning_evening" data-key="tabME" id="tab-me">صبح و شام</button>
+                <button class="tab-btn lang-txt" data-category="after_prayer" data-key="tabAP" id="tab-ap">بعدِ نماز</button>
+                <button class="tab-btn lang-txt" data-category="daily_activities" data-key="tabDD" id="tab-dd">روزمرة دعائيں</button>
             </div>
 
             <!-- Zikr Display Card -->
@@ -70,26 +71,23 @@
                 <i class="fas fa-medal"></i> <span id="badge-text">لیول: نوآموز (Beginner)</span>
             </div>
 
-
-        <!-- Footer / Controls -->
-        <footer class="app-footer">
-            <button id="undo-btn" class="footer-btn secondary" title="Undo Last Count">
-                <i class="fas fa-undo"></i> <span id="undo-text">انڈو</span>
-            </button>
-            <button id="reset-btn" class="footer-btn danger">
-                <i class="fas fa-redo"></i> <span id="reset-text">ری سیٹ</span>
-            </button>
-            <div class="nav-arrows">
-                <button id="prev-zikr" class="footer-btn" title="Previous">
-                    <i class="fas fa-chevron-right"></i>
+            <!-- Footer / Controls -->
+            <footer class="app-footer">
+                <button id="undo-btn" class="footer-btn secondary" title="Undo Last Count">
+                    <i class="fas fa-undo"></i> <span id="undo-text">انڈو</span>
                 </button>
-                <button id="next-zikr" class="footer-btn" title="Next">
-                    <i class="fas fa-chevron-left"></i>
+                <button id="reset-btn" class="footer-btn danger">
+                    <i class="fas fa-redo"></i> <span id="reset-text">ری سیٹ</span>
                 </button>
-            </div>
-        </footer>
-
-
+                <div class="nav-arrows">
+                    <button id="prev-zikr" class="footer-btn" title="Previous">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <button id="next-zikr" class="footer-btn" title="Next">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                </div>
+            </footer>
 
             <!-- Counter Visualizer (Circular Progress & Large Tap Area) -->
             <div class="counter-box" id="tap-area">
@@ -101,10 +99,8 @@
                     <span id="current-count" class="count-number">0</span>
                     <span class="target-label" id="target-display">ہدف: 33</span>
                 </div>
-                <div class="tap-hint">ٹیپ کریں (ڈبل ٹیپ سے انڈو کریں)</div>
+                <div class="tap-hint" id="tap-hint-text">ٹیپ کریں (ڈبل ٹیپ سے انڈو کریں)</div>
             </div>
-
-
             
             <!-- Target Settings & Fast Goals -->
             <div class="target-management">
@@ -123,24 +119,23 @@
 
         <!-- History Log Section -->
         <section class="history-section">
-            <h4 id="history-title"><i class="fas fa-history"></i> حالیہ ریکارڈز (History)</h4>
+            <h4 id="text-history"><i class="fas fa-history"></i> حالیہ ریکارڈز (History)</h4>
             <ul class="history-list" id="history-log">
                 <!-- Dynamic Items will be added here -->
             </ul>
         </section>
-
         
-        <!-- Stats Panel Dashboard (اب یہ خانہ یہاں نیچے آ گیا ہے) -->
+        <!-- Stats Panel Dashboard -->
         <section class="stats-dashboard">
             <h3 id="stats-title"><i class="fas fa-chart-line"></i> روزانہ کی کارکردگی</h3>
             <div class="stats-grid">
                 <div class="stat-card">
                     <span class="stat-num" id="stat-today">0</span>
-                    <span class="stat-label">آج کا ذکر</span>
+                    <span class="stat-label" id="label-today">آج کا ذکر</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-num" id="stat-lifetime">0</span>
-                    <span class="stat-label">کل تسبیحات</span>
+                    <span class="stat-label" id="label-lifetime">کل تسبیحات</span>
                 </div>
             </div>
         </section>

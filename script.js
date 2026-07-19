@@ -3,9 +3,9 @@ const database = {
     // 1. عام اذکار و تسبیحات (General Dhikr)
     general: [
         { id: 1, ar: "سُبْحَانَ اللَّهِ" },
-        { id: 2, ar: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ" },
-        { id: 3, ar: "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ" },
-        { id: 4, ar: "سُبْحَانَ اللَّهِ الْعَظِيمِ وَبِحَمْدِهِ" },
+        { id: 2, ar: "الْحَمْدُ لِلَّهِ"  },
+        { id: 3, ar: "اللَّهُ أَكْبَرُ" },
+        { id: 4, ar: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ" },
         { id: 5, ar: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ ، سُبْحَانَ اللَّهِ الْعَظِيمِ" },
         { id: 6, ar: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ" },
         { id: 7, ar: "لا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ" },
@@ -73,13 +73,62 @@ const database = {
         { id: 61, ar: "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ" }
     ],
 
-    // 4. روزمرہ سرگرمیوں کے اذکار (Daily Activities Dhikr)
+    // 4. روزمرہ سرگرمیوں کے دعائين (Daily Activities Duaa)
     daily_activities: [
-        { id: 62, ar: "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ" }, // گھر سے نکلتے وقت
-        { id: 63, ar: "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ" }, // سواری پر بیٹھتے وقت
-        { id: 64, ar: "بِسْمِ اللَّهِ" }, // کھانے سے پہلے
-        { id: 65, ar: "الْحَمْدُ لِلَّهِ" } // کھانے کے بعد
-    ]
+        { id: 62, ar: "بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ" }, 
+        { id: 63, ar: "سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ" }, 
+        { id: 64, ar: "بِسْمِ اللَّهِ" }, 
+        { id: 65, ar: "الْحَمْدُ لِلَّهِ" }, 
+ { id: 62, ar: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ" },
+    { id: 63, ar: "رَبَّنَا لا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلا تَحْمِلْ عَلَيْنَا إِصْراً كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلا تُحَمِّلْنَا مَا لا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ" },
+    { id: 64, ar: "رَبَّنَا لا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً إِنَّكَ أَنْتَ الْوَهَّابُ" },
+    { id: 65, ar: "رَبَّنَا إِنَّنَا آمَنَّا فَاغْفِرْ لَنَا ذُنُوبَنَا وَقِنَا عَذَابَ النَّارِ" },
+    { id: 66, ar: "رَبَّنَا آمَنَّا بِمَا أَنْزَلْتَ وَاتَّبَعْنَا الرَّسُولَ فَاكْتُبْنَا مَعَ الشَّاهِدِينَ" },
+    { id: 67, ar: "رَبَّنَا إِنَّنَا سَمِعْنَا مُنَادِياً يُنَادِي لِلْإِيمَانِ أَنْ آمِنُوا بِرَبِّكُمْ فَآمَنَّا رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ * رَبَّنَا وَآتِنَا مَا وَعَدْتَنَا عَلَى رُسُلِكَ وَلا تُخْزِنَا يَوْمَ الْقِيَامَةِ إِنَّكَ لا تُخْلِفُ الْمِيعَادَ" },
+    { id: 68, ar: "رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ" },
+    { id: 69, ar: "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْراً وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ" },
+    { id: 70, ar: "رَبَّنَا آتِنَا مِنْ لَدُنْكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَداً" },
+    { id: 71, ar: "رَبِّ أَنْزِلْنِي مُنْزَلاً مُبَارَكاً وَأَنْتَ خَيْرُ الْمُنْزِلِينَ" },
+    { id: 72, ar: "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِينِ * وَأَعُوذُ بِكَ رَبِّ أَنْ يَحْضُرُونِ" },
+    { id: 73, ar: "ربنا اصرف عنا عذاب جهنم إن عذابها كان غراما" },
+    { id: 74, ar: "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَاماً" },
+    { id: 75, ar: "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحاً تَرْضَاهُ وَأَصْلِحْ لِي فِي ذُرِّيَّتِي إِنِّي تُبْتُ إِلَيْكَ وَإِنِّي مِنَ الْمُسْلِمِينَ" },
+    { id: 76, ar: "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحاً تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ" },
+    { id: 77, ar: "رَبَّنَا اغْفِرْ لَنَا وَلِإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَانِ وَلا تَجْعَلْ فِي قُلُوبِنَا غِلّاً لِلَّذِينَ آمَنُوا رَبَّنَا إِنَّكَ رَؤُوفٌ رَحِيمٌ" },
+    { id: 78, ar: "رَبَّنَا عَلَيْكَ تَوَكَّلْنَا وَإِلَيْكَ أَنَبْنَا وَإِلَيْكَ الْمَصِيرُ * رَبَّنَا لا تَجْعَلْنَا فِتْنَةً لِلَّذِينَ كَفَرُوا وَاغْفِرْ لَنَا رَبَّنَا إِنَّكَ أَنْتَ الْعَزِيزُ الْحَكِيمُ" },
+    { id: 79, ar: "رَبِّ أَدْخِلْنِي مُدْخَلَ صِدْقٍ وَأَخْرِجْنِي مُخْرَجَ صِدْقٍ وَاجْعَلْ لِي مِنْ لَدُنْكَ سُلْطَاناً نَصِيراً" },
+
+    // الأدعية المأثورة النبوية (جامع احادیث کی دعائیں)
+    { id: 80, ar: "اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الْأُمُورِ كُلِّهَا، وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الْآخِرَةِ." },
+    { id: 81, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي، وَآمِنْ رَوْعَاتِي، وَاحْفَظْنِي مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِي، وَأَعُوذُ بِعَظَمَتِکَ أَنْ أُغْتَالَ مِنْ تَحْتِي." },
+    { id: 82, ar: "اللَّهُمَّ أَصْلِحْ لِي دِينِي الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِي الَّتِي إِلَيْهَا مَعَادِي، وَاجْعَلِ الْحَيَاةَ زِيَادَةً لِي فِي کُلِّ خَيْرٍ، وَالْمَوْتَ رَاحَةً لِي مِنْ کُلِّ شَرٍّ." },
+    { id: 83, ar: "اللَّهُمَّ إِنِّي أَعُوذُ بِکَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِکَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِکَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِکَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ." },
+    { id: 84, ar: "اللَّهُمَّ إِنِّي أَعُوذُ بِکَ مِنْ زَوَالِ نِعْمَتِکَ، وَتَحُوُّلِ عَافِيَتِکَ، وَمِنْ فُجَاءَةِ نِقْمَتِکَ، وَمِنْ جَمِيعِ سَخَطِکَ." },
+    { id: 85, ar: "اللَّهُمَّ آتِ نَفْسِي تَقْوَاهَا، وَزَكِّهَا أَنْتَ خَيْرُ مَنْ زَكَّاهَا، أَنْتَ وَلِيُّهَا وَمَوْلَاهَا، اللَّهُمَّ إِنِّي أَعُوذُ بِکَ مِنْ قَلْبٍ لَا يَخْشَعُ، وَمِنْ نَفْسٍ لَا تَشْبَعُ، وَمِنْ عِلْمٍ لَا يَنْفَعُ، وَمِنْ دَعْوَةٍ لَا يُسْتَجَابُ لَهَا." },
+    { id: 86, ar: "اللَّهُمَّ إِنِّي أَعُوذُ بِکَ مِنَ الْهَمِّ وَالْحُزْنِ، وَالْعَجْزِ وَالْکَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَالْهَرَمِ وَعَذَابِ الْقَبْرِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ." },
+    { id: 87, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ بِأَنَّ لَکَ الْحَمْدَ لَا إِلَهَ إِلَّا أَنْتَ بَدِيعُ السَّمَاوَاتِ وَالْأَرْضِ، يَا ذَا الْجَلَالِ وَالْإِکْرَامِ، يَا حَيُّ يَا قَيُّومُ." },
+    { id: 88, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ الثَّبَاتَ فِي الْأَمْرِ، وَالْعَزِيمَةَ عَلَى الرُّشْدِ، وَأَسْأَلُکَ شُكْرَ نِعْمَتِکَ، وَحُسْنِ عِبَادَتِکَ، وَأَسْأَلُکَ قَلْبًا سَلِيمًا، وَلِسَانًا صَادِقًا، وَأَسْأَلُکَ مِنْ خَيْرِ مَا تَعْلَمُ، وَأَعُوذُ بِکَ مِنْ شَرِّ مَا تَعْلَمُ، وَأَسْتَغْفِرُکَ لِمَا تَعْلَمُ، إِنَّکَ أَنْتَ عَلَّامُ الْغُيُوبِ." },
+    { id: 89, ar: "اللَّهُمَّ قِنِي شَرَّ نَفْسِي، وَاعْزِمْ لِي عَلَى أَرْشَدِ أَمْرِي، اللَّهُمَّ اغْفِرْ لِي مَا أَسْرَرْتُ وَمَا أَعْلَنْتُ، وَمَا أَخْطَأْتُ وَمَا تَعَمَّدْتُ، مَا عَلِمْتُ وَمَا جَهِلْتُ." },
+    { id: 90, ar: "اللَّهُمَّ فَارِجَ الْهَمِّ، كَاشِفَ الْغَمِّ، مُجِيبَ دَعْوَةِ الْمُضْطَرِّينَ، رَحْمَنَ الدُّنْيَا وَالْآخِرَةِ وَرَحِيمَهُمَا، أَنْتَ تَرْحَمُنِي فَارْحَمْنِي رَحْمَةً تُغْنِينِي بِهَا عَنْ رَحْمَةِ مَنْ سِوَاكَ." },
+    { id: 91, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ خَيْرَ الْمَسْأَلَةِ، وَخَيْرَ الدُّعَاءِ، وَخَيْرَ النَّجَاحِ، وَخَيْرَ الْعَمَلِ، وَخَيْرَ الثَّوَابِ، وَخَيْرَ الْحَيَاةِ، وَخَيْرَ الْمَمَاتِ، وَثَبِّتْنِي وَثَقِّلْ مَوَازِينِي، وَحَقِّقْ إِيمَانِي، وَارْفَعْ دَرَجَتِي، وَتَقَبَّلِ الْخَيْرَ وَخَوَاتِمَهُ وَأَوَّلَهُ وَآخِرَهُ وَظَاهِرَهُ وَبَاطِنَهُ، وَالدَّرَجَاتِ الْعُلَى مِنَ الْجَنَّةِ، آمِينَ." },
+    { id: 92, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ أَنْ تَرْفَعَ ذِکْرِي، وَتَضَعَ وِزْرِي، وَتُصْلِحَ أَمْرِي، وَتُطَهِّرَ قَلْبِي، وَتُحَصِّنَ فَرْجِي، وَتُنَوِّرَ لِي قَلْبِي، وَتَغْفِرَ لِي ذَنْبِي، وَأَسْأَلُکَ أَنْ تُبَارِکَ لِي فِي نَفْسِي، وَفِي سَمْعِي، وَفِي بَصَرِي، وَفِي رُوحِي، وَفِي خُلُقِي وَأَهْلِي، وَفِي مَحْيَايَ وَفِي مَمَاتِي، وَفِي عَمَلِي، وَتَقَبَّلْ حَسَنَاتِي، وَأَسْأَلُکَ الدَّرَجَاتِ الْعُلَى مِنَ الْجَنَّةِ، آمِينَ." },
+    { id: 93, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ الطَّيِّبَاتِ، وَفِعْلَ الْخَيْرَاتِ، وَتَرْکَ الْمُنْکَرَاتِ، وَحُبَّ الْمَسَاکِينِ، وَأَنْ تَتُوبَ عَلَيَّ وَتَغْفِرَ لِي وَتَرْحَمَنِي، وَإِذَا أَرَدْتَ فِي خَلْقِکَ فِتْنَةً فَنَجِّنِي إِلَيْکَ مِنْهَا غَيْرَ مَفْتُونٍ، اللَّهُمَّ وَأَسْأَلُکَ حُبَّکَ، وَحُبَّ مَنْ يُحِبُّکَ، وَحُبَّ عَمَلٍ يُبَلِّغُنِي إِلَى حُبِّکَ." },
+    { id: 94, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ مِنَ الْخَيْرِ كُلِّهِ عَاجِلِهِ وَآجِلِهِ مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، وَأَعُوذُ بِکَ مِنَ الشَّرِّ عَاجِلِهِ وَآجِلِهِ مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ، وَأَسْأَلُکَ الْجَنَّةَ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَأَعُوذُ بِکَ مِنَ النَّارِ وَمَا قَرَّبَ إِلَيْهَا مِنْ قَوْلٍ أَوْ عَمَلٍ، وَأَسْأَلُکَ مِنْ خَيْرِ مَا سَأَلَکَ عَبْدُکَ وَرَسُولُکَ مُحَمَّدٌ، وَأَسْأَلُکَ مَا قَضَيْتَ لِي مِنْ أَمْرٍ أَنْ تَجْعَلَ عَاقِبَتَهُ رُشْدًا." },
+    { id: 95, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ صِحَّةً فِي إِيمَانٍ، وَإِيمَانًا فِي حُسْنِ خُلُقٍ، وَنَجَاحًا يَتْبَعُهُ فَلَاحٌ، وَرَحْمَةً مِنْکَ وَعَافِيَةً، وَمَغْفِرَةً مِنْکَ وَرِضْوَانًا." },
+    { id: 96, ar: "اللَّهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَکَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَکَ شَيْءٌ، أَعُوذُ بِکَ مِنْ شَرِّ كُلِّ دَابَّةٍ نَاصِيَتُهَا بِيَدِکَ، وَأَعُوذُ بِکَ مِنَ الْإِثْمِ وَالْكَسَلِ، وَمِنْ عَذَابِ الْقَبْرِ، وَمِنْ فِتْنَةِ الْغِنَى، وَمِنْ فِتْنَةِ الْفَقْرِ، وَأَعُوذُ بِکَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ، اللَّهُمَّ نَقِّ قَلْبِي مِنَ الْخَطَايَا کَمَا نَقَّيْتَ الثَّوْبَ الْأَبْيَضَ مِنَ الدَّنَسِ، اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطِيئَتِي كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ." },
+    { id: 97, ar: "اللَّهُمَّ بِعِلْمِکَ الْغَيْبَ وَقُدْرَتِکَ عَلَى الْخَلْقِ أَحْيِنِي مَا عَلِمْتَ الْحَيَاةَ خَيْرًا لِي، اللَّهُمَّ وَأَسْأَلُکَ خَشْيَتَکَ فِي الْغَيْبِ وَالشَّهَادَةِ، وَأَسْأَلُکَ كَلِمَةَ الْحَقِّ فِي الْغَضَبِ وَالرِّضَا، وَأَسْأَلُکَ الْقَصْدَ فِي الْفَقْرِ وَالْغِنَى، وَأَسْأَلُکَ نَعِيمًا لَا يَنْفَدُ، وَأَسْأَلُکَ قُرَّةَ عَيْنٍ لَا تَنْقَطِعُ، وَأَسْأَلُکَ الرِّضَا بَعْدَ الْقَضَاءِ، وَأَسْأَلُکَ بَرْدَ الْعَيْشِ بَعْدَ الْمَوْتِ، وَأَسْأَلُکَ لَذَّةَ النَّظَرِ إِلَى وَجْهِکَ، وَأَسْأَلُکَ الشَّوْقَ إِلَى لِقَائِکَ فِي غَيْرِ ضَرَّاءَ مُضِرَّةٍ وَلَا فِتْنَةٍ مُضِلَّةٍ، اللَّهُمَّ زَيِّنَّا بِزِينَةِ الْإِيمَانِ، وَاجْعَلْنَا هُدَاةً مُهْتَدِينَ." },
+    { id: 98, ar: "اللَّهُمَّ إِنَّا نَسْأَلُکَ مُوجِبَاتِ رَحْمَتِکَ، وَعَزَائِمَ مَغْفِرَتِکَ، وَالسَّلَامَةَ مِنْ کُلِّ إِثْمٍ، وَالْغَنِيمَةَ مِنْ کُلِّ بِرٍّ، وَالْفَوْزَ بِالْجَنَّةِ، وَالنَّجَاةَ مِنَ النَّارِ." },
+    { id: 99, ar: "اللَّهُمَّ احْفَظْنِي بِالْإِسْلَامِ قَائِمًا، وَاحْفَظْنِي بِالْإِسْلَامِ قَاعِدًا، وَاحْفَظْنِي بِالْإِسْلَامِ رَاقِدًا، وَلَا تُشْمِتْ بِي عَدُوًّا حَاسِدًا، اللَّهُمَّ إِنِّي أَسْأَلُکَ مِنْ خَيْرِ خَزَائِنِهِ بِيَدِکَ، وَأَعُوذُ بِکَ مِنْ شَرِّ خَزَائِنِهِ بِيَدِکَ." },
+    { id: 100, ar: "اللَّهُمَّ اغْفِر| لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي، اللَّهُمَّ ارْزُقْنِي مِنْ طَاعَتِکَ مَا تَحُولُ بِهِ بَيْنِي وَبَيْنَ مَعْصِيَتِکَ، وَارْزُقْنِي مِنْ خَشْيَتِکَ مَا تُبَلِّغُنِي بِهِ رَحْمَتَکَ، وَارْزُقْنِي مِنَ الْيَقِينِ مَا تُهَوِّنُ بِهِ عَلَيَّ مَصَائِبَ الدُّنْيَا، وَبَارِکْ لِي فِي سَمْعِي وَبَصَرِي وَاجْعَلْهُمَا الْوَارِثَ مِنِّي، اللَّهُمَّ اجْعَلْ ثَأْرِي عَلَى مَنْ ظَلَمَنِي، وَانْصُرْنِي عَلَى مَنْ عَادَانِي، وَلَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّي وَلَا مَبْلَغَ عِلْمِي، اللَّهُمَّ لَا تُسَلِّطْ عَلَيَّ مَنْ لَا يَرْحَمُنِي." },
+    { id: 101, ar: "رَبِّ أَعِنِّي وَلَا تُعِنْ عَلَيَّ، وَانْصُرْنِي وَلَا تَنْصُرْ عَلَيَّ، وَامْکُرْ لِي وَلَا تَمْکُرْ عَلَيَّ، وَاهْدِنِي وَيَسِّرِ الْهُدَى إِلَيَّ، وَانْصُرْنِي عَلَى مَنْ بَغَى عَلَيَّ، رَبِّ اجْعَلْنِي لَکَ شَکَّارًا، لَکَ ذَکَّارًا، لَکَ رَهَّابًا، لَکَ مِطْوَاعًا، إِلَيْکَ مُخْبِتًا، أَوَّاهًا مُنِيبًا، رَبِّ تَقَبَّلْ تَوْبَتِي، وَاغْسِلْ حَوْبَتِي، وَأَجِبْ دَعْوَتِي، وَثَبِّتْ حُجَّتِي، وَاهْدِ قَلْبِي، وَسَدِّدْ لِسَانِي، وَاسْلُلْ سَخِيمَةَ قَلْبِي." },
+    { id: 102, ar: "اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مِنْ عُقُوبَتِكَ، وَأَعُوذُ بِكَ مِنْكَ لَا أُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ." },
+    { id: 103, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ مِنْ خَيْرِ مَا سَأَلَکَ مِنْهُ عَبْدُکَ وَنَبِيُّکَ مُحَمَّدٌ ﷺ وَعِبَادُکَ الصَّالِحُونَ، وَأَعُوذُ بِکَ مِنْ شَرِّ مَا اسْتَعَاذَکَ مِنْهُ عَبْدُکَ وَنَبِيُّکَ مُحَمَّدٌ ﷺ وَعِبَادُکَ الصَّالِحُونَ." },
+    { id: 104, ar: "اللَّهُمَّ إِنِّي أَسْأَلُکَ رَحْمَةً مِنْ عِنْدِکَ تَهْدِي بِهَا قَلْبِي، وَتَجْمَعُ بِهَا أَمْرِي، وَتَلُمُّ بِهَا شَعَثِي، وَتُصْلِحُ بِهَا غَائِبِي، وَتَرْفَعُ بِهَا شَاهِدِي، وَتُزَكِّي بِهَا عَمَلِي، وَتُلْهِمُنِي بِهَا رُشْدِي، وَتَرُدُّ بِهَا الْفِتَنَ عَنِّي، وَتَعْصِمُنِي بِهَا مِنْ کُلِّ سُوءٍ." },
+    { id: 105, ar: "اللَّهُمَّ رَضِّنِي بِقَضَائِکَ، وَبَارِکْ لِي فِي قَدَرِکَ، حَتَّى لَا أُحِبَّ تَعْجِيلَ مَا أَخَّرْتَ وَلَا تَأْخِيرَ مَا عَجَّلْتَ، وَاکْفِنِي کُلَّ هَوْلٍ دُونَ الْجَنَّةِ." },
+    { id: 106, ar: "لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْکَرِيمِ." },
+    { id: 107, ar: "اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُورًا، وَفِي سَمْعِي نُورًا، وَفِي بَصَرِي نُورًا، وَعَنْ يَمِينِي نُورًا، وَعَنْ شِمَالِي نُورًا، وَفِي عَصَبِي نُورًا، وَفِي لَحْمِي نُورًا، وَمِنْ فَوْقِي نُورًا، وَمِنْ تَحْتِي نُورًا، وَاجْعَلْنِي نُورًا، وَاجْعَلْ لِي نُورًا." }
+
+    ],
 };
 // State Variables loaded directly from LocalStorage
 let currentCategory = 'general';
@@ -93,6 +142,135 @@ let historyLog = JSON.parse(localStorage.getItem('tasbeeh_history')) || [];
 let currentLang = localStorage.getItem('tasbeeh_lang') || 'ur';
 let activeTheme = localStorage.getItem('tasbeeh_theme') || 'theme-dark';
 let activeSoundPack = localStorage.getItem('tasbeeh_sound') || 'classic';
+
+// Complete Multilingual Dictionary (All UI Text Elements Added)
+const translations = {
+    ur: {
+        levelBronze: "لیول: نوآموز (🥉 Bronze)",
+        levelSilver: "لیول: سلور (🥈 Silver)",
+        levelGold: "لیول: گولڈ (🥇 Gold)",
+        levelDiamond: "لیول: ڈائمنڈ (💎 Diamond)",
+        resetText: "ری سیٹ",
+        undoText: "انڈو",
+        goal: "ہدف",
+        history: "حالیہ ریکارڈز (History)",
+        noZikr: "کوئی ذکر نہیں ملا",
+        resetConfirm: "کیا آپ موجودہ کاؤنٹ ری سیٹ کرنا چاہتے ہیں؟",
+        complete: "مکمل",
+        searchPlaceholder: "ذکر تلاش کریں...",
+        tabGeneral: "عام تسبیح",
+        tabME: "صبح و شام",
+        tabAP: "بعدِ نماز",
+        tabDD: "روزمرة دعائيں",
+        tapHint: "ٹیپ کریں (ڈبل ٹیپ سے انڈو کریں)",
+        targetLabel: "ہدف سیٹ کریں:",
+        statsTitle: "روزانہ کی کارکردگی",
+        labelToday: "آج کا ذکر",
+        labelLifetime: "کل تسبیحات",
+        themeDark: "🌙 ڈارک موڈ", themeLight: "☀️ لائٹ موڈ", themeAmoled: "⚫ ایمولیڈ", themeIslamic: "🕌 اسلامک گرین", themeBlue: "🔹 رائل بلیو",
+        soundClassic: "🎵 کلک ساؤنڈ", soundDigital: "📟 ڈیجیٹل", soundSilent: "🔇 خاموش"
+    },
+    en: {
+        levelBronze: "Level: Novice (🥉 Bronze)",
+        levelSilver: "Level: Silver (🥈 Silver)",
+        levelGold: "Level: Gold (🥇 Gold)",
+        levelDiamond: "Level: Diamond (💎 Diamond)",
+        resetText: "Reset",
+        undoText: "Undo",
+        goal: "Goal",
+        history: "Recent Records (History)",
+        noZikr: "No Zikr found",
+        resetConfirm: "Do you want to reset the current count?",
+        complete: "Completed",
+        searchPlaceholder: "Search Zikr...",
+        tabGeneral: "General",
+        tabME: "Morning & Evening",
+        tabAP: "After Prayer",
+        tabDD: "Daily Prayers",
+        tapHint: "Tap to count (Double tap to Undo)",
+        targetLabel: "Set Target:",
+        statsTitle: "Daily Performance Dashboard",
+        labelToday: "Today's Count",
+        labelLifetime: "Lifetime Count",
+        themeDark: "🌙 Dark Mode", themeLight: "☀️ Light Mode", themeAmoled: "⚫ AMOLED", themeIslamic: "🕌 Islamic Green", themeBlue: "🔹 Royal Blue",
+        soundClassic: "🎵 Classic Sound", soundDigital: "📟 Digital Beep", soundSilent: "🔇 Mute / Silent"
+    },
+    ar: {
+        levelBronze: "المستوى: مبتدئ (🥉 البرونزي)",
+        levelSilver: "المستوى: الفضي (🥈 الفضي)",
+        levelGold: "المستوى: الذهبي (🥇 الذهبي)",
+        levelDiamond: "المستوى: الماسي (💎 الماسي)",
+        resetText: "إعادة تعيين",
+        undoText: "تراجع",
+        goal: "الهدف",
+        history: "السجلات الأخيرة (التاريخ)",
+        noZikr: "لم يتم العثور على ذکر",
+        resetConfirm: "هل تريد إعادة تعيين العداد الحالي؟",
+        complete: "مكتمل",
+        searchPlaceholder: "ابحث عن الذكر...",
+        tabGeneral: "تسبيح عام",
+        tabME: "أذكار الصباح والمساء",
+        tabAP: "بعد الصلاة",
+        tabDD: "الأدعية اليومية",
+        tapHint: "اضغط للعد (انقر مزدوجًا للتراجع)",
+        targetLabel: "تحديد الهدف:",
+        statsTitle: "لوحة الأداء اليومي",
+        labelToday: "أذكار اليوم",
+        labelLifetime: "إجمالي التسبيحات",
+        themeDark: "🌙 الوضع الداكن", themeLight: "☀️ الوضع الفاتح", themeAmoled: "⚫ شاشة أموليد", themeIslamic: "🕌 الأخضر الإسلامي", themeBlue: "🔹 الأزرق الملكي",
+        soundClassic: "🎵 صوت نقرة", soundDigital: "📟 رقمي الكتروني", soundSilent: "🔇 وضع صامت"
+    },
+    tr: {
+        levelBronze: "Seviye: Çaylak (🥉 Bronz)",
+        levelSilver: "Seviye: Gümüş (🥈 Gümüş)",
+        levelGold: "Seviye: Altın (🥇 Altın)",
+        levelDiamond: "Seviye: Elmas (💎 Elmas)",
+        resetText: "Sıfırla",
+        undoText: "Geri Al",
+        goal: "Hedef",
+        history: "Geçmiş Kayıtlar",
+        noZikr: "Zikir bulunamadı",
+        resetConfirm: "Mevcut sayımı sıfırlamak istiyor musunuz?",
+        complete: "Tamamlandı",
+        searchPlaceholder: "Zikir ara...",
+        tabGeneral: "Genel Zikir",
+        tabME: "Sabah ve Akşam",
+        tabAP: "Namazdan Sonra",
+        tabDD: "Günlük Dualar",
+        tapHint: "Saymak için tıklayın (Geri almak için çift tıklayın)",
+        targetLabel: "Hedef Belirle:",
+        statsTitle: "Günlük Performans Paneli",
+        labelToday: "Bugünkü Zikir",
+        labelLifetime: "Toplam Zikir",
+        themeDark: "🌙 Karanlık Mod", themeLight: "☀️ Aydınlık Mod", themeAmoled: "⚫ AMOLED Siyah", themeIslamic: "🕌 İslami Yeşil", themeBlue: "🔹 Kraliyet Mavisi",
+        soundClassic: "🎵 Klasik Tık", soundDigital: "📟 Dijital Sinyal", soundSilent: "🔇 Sessiz Mod"
+    },
+    id: {
+        levelBronze: "Tingkat: Pemula (🥉 Perunggu)",
+        levelSilver: "Tingkat: Perak (🥈 Perak)",
+        levelGold: "Tingkat: Emas (🥇 Emas)",
+        levelDiamond: "Tingkat: Berlian (💎 Berlian)",
+        resetText: "Atur Ulang",
+        undoText: "Batal",
+        goal: "Target",
+        history: "Catatan Terbaru",
+        noZikr: "Zikir tidak ditemukan",
+        resetConfirm: "Apakah Anda ingin mengatur ulang hitungan saat ini?",
+        complete: "Selesai",
+        searchPlaceholder: "Cari zikir...",
+        tabGeneral: "Tasbih Umum",
+        tabME: "Pagi & Petang",
+        tabAP: "Setelah Shalat",
+        tabDD: "Doa Sehari-hari",
+        tapHint: "Ketuk untuk menghitung (Ketuk dua kali untuk membatalkan)",
+        targetLabel: "Atur Target:",
+        statsTitle: "Dasbor Kinerja Harian",
+        labelToday: "Dzikir Hari Ini",
+        labelLifetime: "Total Dzikir",
+        themeDark: "🌙 Mode Gelap", themeLight: "☀️ Mode Terang", themeAmoled: "⚫ AMOLED Hitam", themeIslamic: "🕌 Hijau Islami", themeBlue: "🔹 Biru Kerajaan",
+        soundClassic: "🎵 Suara Klasik", soundDigital: "📟 Bunyi Digital", soundSilent: "🔇 Mode Senyap"
+    }
+};
 
 // Web Audio API Setup
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -121,9 +299,10 @@ document.addEventListener("DOMContentLoaded", () => {
     targetInput.value = target;
     
     filterSupplications();
-    updateCounterDisplay();
     renderHistory();
-    checkAchievements();
+    
+    // زبان کی سیٹنگز پہلی بار لوڈ کریں
+    applyLanguageUI();
 });
 
 // Sound Core Generator
@@ -167,6 +346,47 @@ function setProgress(percent) {
     progressRingCircle.style.strokeDashoffset = offset;
 }
 
+// Full UI Language Controller
+function applyLanguageUI() {
+    const dict = translations[currentLang] || translations['ur'];
+
+    // 1. سرچ بار اور بٹنز کا ترجمہ
+    document.getElementById('search-input').placeholder = dict.searchPlaceholder;
+    document.getElementById('reset-text').textContent = dict.resetText;
+    document.getElementById('undo-text').textContent = dict.undoText;
+    document.getElementById('text-history').innerHTML = `<i class="fas fa-history"></i> ${dict.history}`;
+    document.getElementById('tap-hint-text').textContent = dict.tapHint;
+    document.getElementById('target-label-text').textContent = dict.targetLabel;
+    
+    // 2. ڈیش بورڈ سٹیٹس کا ترجمہ
+    document.getElementById('stats-title').innerHTML = `<i class="fas fa-chart-line"></i> ${dict.statsTitle}`;
+    document.getElementById('label-today').textContent = dict.labelToday;
+    document.getElementById('label-lifetime').textContent = dict.labelLifetime;
+
+    // 3. چاروں کیٹیگریز ٹیبز کا ترجمہ
+    document.getElementById('tab-general').textContent = dict.tabGeneral;
+    document.getElementById('tab-me').textContent = dict.tabME;
+    document.getElementById('tab-ap').textContent = dict.tabAP;
+    document.getElementById('tab-dd').textContent = dict.tabDD;
+
+    // 4. ڈراپ ڈاؤن آپشنز (تھیم اور ساؤنڈ) کا ترجمہ متحرک طور پر کریں
+    document.querySelectorAll('.lang-txt').forEach(el => {
+        const key = el.getAttribute('data-key');
+        if(dict[key]) el.textContent = dict[key];
+    });
+
+    // 5. پیج کی ڈائریکشن بدلو (RTL / LTR)
+    if (currentLang === 'ur' || currentLang === 'ar') {
+        document.body.style.direction = 'rtl';
+    } else {
+        document.body.style.direction = 'ltr';
+    }
+
+    // 6. باقی کمپوننٹس کو ری رینڈر کرو تاکہ نئی زبان لاگو ہو
+    checkAchievements();
+    updateCounterDisplay();
+}
+
 // App Logic Functions
 function doCount() {
     count++;
@@ -187,6 +407,7 @@ function doCount() {
     checkAchievements();
 }
 
+// Do Undo Function
 function doUndo() {
     if (count > 0) {
         count--;
@@ -206,25 +427,33 @@ function logToHistory() {
 }
 
 function renderHistory() {
+    const dict = translations[currentLang] || translations['ur'];
     historyLogEl.innerHTML = historyLog.map(item => `
         <li class="history-item">
             <span>${item.text.substring(0, 25)}...</span>
-            <strong>${item.target} (مکمل) <small>${item.time}</small></strong>
+            <strong>${item.target} (${dict.complete}) <small>${item.time}</small></strong>
         </li>
     `).join('');
 }
 
 function checkAchievements() {
     const badgeText = document.getElementById('badge-text');
-    if (lifetimeCount >= 1000) badgeText.textContent = "لیول: ڈائمنڈ (💎 Diamond)";
-    else if (lifetimeCount >= 500) badgeText.textContent = "لیول: گولڈ (🥇 Gold)";
-    else if (lifetimeCount >= 100) badgeText.textContent = "لیول: سلور (🥈 Silver)";
-    else badgeText.textContent = "لیول: نوآموز (🥉 Bronze)";
+    if (!badgeText) return;
+    
+    const dict = translations[currentLang] || translations['ur'];
+    
+    if (lifetimeCount >= 1000) badgeText.textContent = dict.levelDiamond;
+    else if (lifetimeCount >= 500) badgeText.textContent = dict.levelGold;
+    else if (lifetimeCount >= 100) badgeText.textContent = dict.levelSilver;
+    else badgeText.textContent = dict.levelBronze;
 }
 
 function updateCounterDisplay() {
     currentCountEl.textContent = count;
-    targetDisplayEl.textContent = `ہدف: ${target}`;
+    
+    const dict = translations[currentLang] || translations['ur'];
+    targetDisplayEl.textContent = `${dict.goal}: ${target}`;
+    
     document.getElementById('stat-today').textContent = todayCount;
     document.getElementById('stat-lifetime').textContent = lifetimeCount;
     
@@ -247,14 +476,17 @@ function filterSupplications() {
 }
 
 function updateZikrDisplay() {
+    const dict = translations[currentLang] || translations['ur'];
     if (filteredDatabase.length === 0) {
         zikrArabicEl.textContent = "-";
-        zikrTranslationEl.textContent = "کوئی ذکر نہیں ملا";
+        zikrTranslationEl.textContent = dict.noZikr;
         hadithRefEl.textContent = "";
         return;
     }
     const zikr = filteredDatabase[currentIndex];
     zikrArabicEl.textContent = zikr.ar;
+    
+    // اگر انگریزی منتخب ہو تو ڈیٹا بیس کا انگلش ترجمہ، ورنہ اردو والا
     zikrTranslationEl.textContent = currentLang === 'en' ? zikr.en : zikr.ur;
     hadithRefEl.textContent = zikr.ref;
     
@@ -268,6 +500,7 @@ function saveState() {
     localStorage.setItem('tasbeeh_today', todayCount);
     localStorage.setItem('tasbeeh_lifetime', lifetimeCount);
     localStorage.setItem('tasbeeh_history', JSON.stringify(historyLog));
+    localStorage.setItem('tasbeeh_lang', currentLang);
 }
 
 function applyTheme(theme) {
@@ -278,7 +511,6 @@ function applyTheme(theme) {
 
 // Event Listeners
 tapArea.addEventListener('click', (e) => {
-    // Avoid double clicks firing native behaviors
     if (e.detail === 1) doCount();
 });
 
@@ -334,7 +566,8 @@ document.getElementById('sound-pack').addEventListener('change', (e) => {
 document.getElementById('undo-btn').addEventListener('click', doUndo);
 
 document.getElementById('reset-btn').addEventListener('click', () => {
-    if(confirm("کیا آپ موجودہ کاؤنٹ ری سیٹ کرنا چاہتے ہیں؟")) {
+    const dict = translations[currentLang] || translations['ur'];
+    if(confirm(dict.resetConfirm)) {
         count = 0;
         saveState();
         updateCounterDisplay();
@@ -353,4 +586,13 @@ document.getElementById('prev-zikr').addEventListener('click', () => {
         currentIndex = (currentIndex - 1 + filteredDatabase.length) % filteredDatabase.length;
         updateZikrDisplay();
     }
+});
+
+// زبان کی تبدیلی کا مین ایونٹ لسٹر
+document.getElementById('language-select').addEventListener('change', function() {
+    currentLang = this.value;
+    saveState();
+    applyLanguageUI();
+    renderHistory();
+    updateZikrDisplay(); 
 });
