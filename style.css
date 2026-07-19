@@ -86,7 +86,7 @@ body {
     gap: 20px;
 }
 
-header class {
+.app-header {
     display: flex;
     justify-content: space-between;
 }
@@ -196,6 +196,9 @@ select {
     cursor: pointer;
     user-select: none;
     border-radius: 50%;
+    /* کلک کرنے پر موبائل پر آنے والے نیلے چوکور باکس کو ہٹانے کے لیے */
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 .counter-box:active {
     transform: scale(0.97);
